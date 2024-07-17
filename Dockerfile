@@ -6,6 +6,6 @@
 
 FROM openjdk:19.0.1-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/RealOsonSugurta-0.0.1-SNAPSHOT.jar realosonsugurta.jar
+COPY --from=build /app/target/LiveOsonSugurta-0.0.1-SNAPSHOT.jar liveosonsugurta.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "realosonsugurta.jar"]
+ENTRYPOINT ["java", "-jar", "liveosonsugurta.jar"]
